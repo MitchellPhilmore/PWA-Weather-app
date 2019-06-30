@@ -49,6 +49,25 @@ hr{
 
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .card{
+      height: 100vh;
+      width:100vw;
+      
+      
+    }
+    .container{
+      padding:0;
+      margin:0;
+      text-transform: uppercase;
+      
+    }
+
+}
+
 /* .card{ 
   background: url(./tb.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
