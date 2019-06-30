@@ -56,7 +56,7 @@ class App extends Component{
       backgroundSize: 'cover',height: '100%'}} class="card row">
         <div style={{color:'white'}} class="card-content">
            {this.state.weatherData.map(day=>{
-             let imgIcon = `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
+             let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
                <>
               <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2>
