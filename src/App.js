@@ -27,7 +27,7 @@ class App extends Component{
   componentWillMount(){
     let apiKey = '73ec45f3936fe17133d8c9f13c187b62'
 
-    let key = `http://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&q=philadelphia&units=imperial&count=1`
+    let key = `https://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&q=philadelphia&units=imperial&count=1`
 
     axios.get(key)
     .then(response=>response)
