@@ -36,6 +36,13 @@ hr{
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    
   .card{
     height:100vh;
     width:100vw;
@@ -69,6 +76,13 @@ hr{
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    
 
     .card{
       height:100vh;
@@ -121,6 +135,13 @@ hr{
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    
     /* .day{
       position: relative;
       left:60px;
