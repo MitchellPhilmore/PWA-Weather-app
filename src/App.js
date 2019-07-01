@@ -54,7 +54,7 @@ class App extends Component{
       <div className="container">
       <div style={{ background: `url(${backgrounds[this.state.backgroundType]}) no-repeat center center fixed`, 
       backgroundSize: 'cover',height: '100vh'}} class="card row">
-        <div style={{color:'white'}} class="card-content">
+        <div style={{color:'white'}} className="card-content">
            {this.state.weatherData.map(day=>{
              let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
@@ -63,10 +63,10 @@ class App extends Component{
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
-              <span className="col s4 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</span>
+              <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4>
 
                  <img  className="col s3" id="weatherIcon" src={imgIcon}/>
-                <h2 class="description">{day.weather[0].description}</h2>
+                <h2 className="description">{day.weather[0].description}</h2>
 
                  <div className="col l3"></div>
                  <h5  className="degree"><span style={{fontSize:'110%',fontWeight:700}}>{Math.ceil(day.main.temp)}</span><sup>&#xb0;</sup> <span style={{marginLeft:'5px',fontWeight:200}}>{Math.floor(day.main.temp_min)}<sup>&#xb0;</sup></span></h5>

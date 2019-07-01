@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 
-
+h4{
+  color:black;
+}
 
 .forcast{
 width:300px;
