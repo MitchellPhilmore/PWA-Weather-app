@@ -38,6 +38,7 @@ hr{
   and (-webkit-min-device-pixel-ratio: 3) { 
     html, body {
       overflow-x: hidden;
+      overflow-y: hidden;
     }
     body {
       position: relative;
@@ -78,6 +79,7 @@ hr{
   and (-webkit-min-device-pixel-ratio: 2) { 
     html, body {
       overflow-x: hidden;
+      overflow-y: hidden;
     }
     body {
       position: relative;
@@ -137,6 +139,7 @@ hr{
   and (-webkit-min-device-pixel-ratio: 2) {
     html, body {
       overflow-x: hidden;
+      overflow-y: hidden;
     }
     body {
       position: relative;
