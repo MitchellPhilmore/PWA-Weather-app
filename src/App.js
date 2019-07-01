@@ -63,7 +63,6 @@ class App extends Component{
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
-                 <div className="col s1"></div>
               <span className="col s4 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</span>
 
                  <img  className="col s3" id="weatherIcon" src={imgIcon}/>
