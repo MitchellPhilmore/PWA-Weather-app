@@ -5,6 +5,7 @@ import axios from 'axios'
 import cloudyGif from './cloudy.gif'
 import clearGif from './tb.gif'
 import rainGif from './rainday2.gif'
+import moment from 'moment'
 
 let backgrounds = {
   Clouds:cloudyGif,
@@ -39,10 +40,12 @@ class App extends Component{
     })
   }
     generateDayOfTheWeek =(date)=>{
-    let generatedDay = new Date(date).getDay()
-    let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
-     console.log(days[generatedDay])
-    return days[generatedDay]
+      let dayOfTheWeek = moment(date).format('dddd')
+       return dayOfTheWeek
+    // let generatedDay = new Date(date).getDay()
+    // let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
+    //  console.log(days[generatedDay])
+    // return days[generatedDay]
   }
 
  
