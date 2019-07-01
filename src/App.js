@@ -63,8 +63,9 @@ class App extends Component{
               <h2>{day.weather[0].description}</h2>
               <div className="weekly-forcast col s12">
                 <div className="days">
-              <h5 className="col l6 day">{this.generateDayOfTheWeek(day.dt_txt)}</h5>
                  <div className="col l1"></div>
+              <h5 className="col l6 day">{this.generateDayOfTheWeek(day.dt_txt)}</h5>
+
                  <img  className="col s3" id="weatherIcon" src={imgIcon}/>
                  <div className="col l3"></div>
                  <h5  className="degree"><span style={{fontSize:'110%',fontWeight:700}}>{Math.ceil(day.main.temp)}</span><sup>&#xb0;</sup> <span style={{marginLeft:'5px',fontWeight:200}}>{Math.floor(day.main.temp_min)}<sup>&#xb0;</sup></span></h5>
