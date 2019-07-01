@@ -35,7 +35,7 @@ class App extends Component{
       console.log(response)
       let filteredList = response.data.list.filter((data)=>data.dt_txt.includes('18:00:00'))
       console.log(filteredList)
-      this.setState({weatherData:filteredList,backgroundType:filteredList[4].weather[0].main})
+      this.setState({weatherData:filteredList,backgroundType:filteredList[2].weather[0].main})
     })
   }
     generateDayOfTheWeek =(date)=>{
@@ -60,14 +60,18 @@ class App extends Component{
              let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
                <>
-              <h5 className="col l4 day">{['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date(day.dt_txt).getDay()]}</h5>
+              
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
               {/* <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4> */}
-
-                 <img  className="col s3" id="weatherIcon" src={imgIcon}/>
+                  <div>
+                  <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4>
+                  <img  className="col s3" id="weatherIcon" src={imgIcon}/>
                 <h2 className="description">{day.weather[0].description}</h2>
+
+                  </div>
+                
 
                  <div className="col l3"></div>
                  <h5  className="degree"><span style={{fontSize:'110%',fontWeight:700}}>{Math.ceil(day.main.temp)}</span><sup>&#xb0;</sup> <span style={{marginLeft:'5px',fontWeight:200}}>{Math.floor(day.main.temp_min)}<sup>&#xb0;</sup></span></h5>
