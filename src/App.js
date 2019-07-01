@@ -41,6 +41,7 @@ class App extends Component{
     generateDayOfTheWeek =(date)=>{
     let generatedDay = new Date(date).getDay()
     let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
+     console.log(days[generatedDay])
     return days[generatedDay]
   }
 
@@ -66,7 +67,7 @@ class App extends Component{
                 <div className="days">
               {/* <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4> */}
                   <div>
-                  <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4>
+                  <h4 className="col s6 l12 m12 day white-text">{this.generateDayOfTheWeek(day.dt_txt) }</h4>
                   <img  className="col s3" id="weatherIcon" src={imgIcon}/>
                 <h2 className="description">{day.weather[0].description}</h2>
 
