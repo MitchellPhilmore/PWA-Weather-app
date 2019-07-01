@@ -84,6 +84,10 @@ hr{
       position: relative;
       left:60px;
     }
+    .card{
+      background-size: 'contain'
+    }
+
 
 }
 
@@ -111,6 +115,9 @@ hr{
     .day{
       position: relative;
       left:60px;
+    }
+    .card{
+      background-size: 'contain'
     }
 
 
