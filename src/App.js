@@ -64,7 +64,7 @@ class App extends Component{
               <div className="weekly-forcast col s12">
                 <div className="days">
                  <div className="col s1"></div>
-              <h2 className="col s4 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h2>
+              <span className="col s4 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</span>
 
                  <img  className="col s3" id="weatherIcon" src={imgIcon}/>
                 <h2 class="description">{day.weather[0].description}</h2>
