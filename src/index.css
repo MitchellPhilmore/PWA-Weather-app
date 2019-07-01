@@ -44,6 +44,10 @@ hr{
     position: relative;
     left:60px;
   }
+
+  h2{
+    font-size:25px;
+  }
   
 
   .container{
@@ -65,6 +69,9 @@ hr{
       width:100vw;
       
       
+    }
+    h2{
+      font-size:25px;
     }
     .container{
       padding:0;
@@ -92,4 +99,19 @@ hr{
 #weatherIcon{
   position:relative;
   left:20px
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .day{
+      position: relative;
+      left:60px;
+    }
+
+
 }
