@@ -29,6 +29,7 @@ hr{
 .degree{
   text-align:right;
 }
+/* Iphone 6,7,8 plus */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -39,6 +40,12 @@ hr{
     
     
   }
+  .day{
+    position: relative;
+    left:40px;
+  }
+  
+
   .container{
     padding:0;
     margin:0;
@@ -48,7 +55,7 @@ hr{
   
 
 }
-
+/* iphone 6,7,8 */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -64,6 +71,11 @@ hr{
       margin:0;
       text-transform: uppercase;
       
+    }
+
+    .day{
+      position: relative;
+      left:50px;
     }
 
 }
