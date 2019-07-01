@@ -38,11 +38,12 @@ class App extends Component{
       this.setState({weatherData:filteredList,backgroundType:filteredList[4].weather[0].main})
     })
   }
-  generateDayOfTheWeek =(date)=>{
+    generateDayOfTheWeek =(date)=>{
     let generatedDay = new Date(date).getDay()
     let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
     return days[generatedDay]
   }
+
  
   render(){
     
@@ -53,13 +54,13 @@ class App extends Component{
       <>
       <div className="container">
       <div style={{ background: `url(${backgrounds[this.state.backgroundType]}) no-repeat center center fixed`, 
-      backgroundSize: 'cover',height: '100vh'}} class="card row">
+      backgroundSize: 'cover',height:'100%',width:'100vw'}} class="card row">
         <div style={{color:'white'}} className="card-content">
            {this.state.weatherData.map(day=>{
              let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
                <>
-              <h2 className="col l6 day">Friday</h2>
+              <h5 className="col l4 day">{this.generateDayOfTheWeek(day.dt_txt)}</h5>
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
