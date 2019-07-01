@@ -60,7 +60,7 @@ class App extends Component{
              let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
                <>
-              <h5 className="col l4 day">{this.generateDayOfTheWeek(day.dt_txt)}</h5>
+              <h5 className="col l4 day">{['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date(day.dt_txt).getDay()]}</h5>
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
