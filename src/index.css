@@ -42,7 +42,7 @@ hr{
   }
   .day{
     position: relative;
-    left:40px;
+    left:60px;
   }
   
 
@@ -75,7 +75,7 @@ hr{
 
     .day{
       position: relative;
-      left:50px;
+      left:60px;
     }
 
 }
