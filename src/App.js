@@ -20,7 +20,8 @@ class App extends Component{
     super(props)
     this.state = {
       weatherData:[],
-      backgroundType:''
+      backgroundType:'',
+      dayOfTheWeek:''
 
     }
   }
@@ -33,20 +34,22 @@ class App extends Component{
     .then(response=>response)
     .then(response=>{
       console.log(response)
+
+     let  generateDayOfTheWeek =(date)=>{
+        let generatedDay = new Date(date).getDay()
+        let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
+        return days[generatedDay]
+      }
+     
       let filteredList = response.data.list.filter((data)=>data.dt_txt.includes('18:00:00'))
-      console.log(filteredList)
-      this.setState({weatherData:filteredList,backgroundType:filteredList[4].weather[0].main})
+      console.log(filteredList[0].dt_txt)
+      this.setState({weatherData:filteredList,backgroundType:filteredList[4].weather[0].main,dayOfTheWeek:generateDayOfTheWeek(filteredList[0].dt_txt)})
     })
   }
-  generateDayOfTheWeek =(date)=>{
-    let generatedDay = new Date(date).getDay()
-    let days = 'Sunday,Monday,Tuesday,Wedsday,Thursday,Friday, Saturday'.split(",")
-    return days[generatedDay]
-  }
- 
   render(){
     
     console.log(this.state.backgroundType)
+    console.log(this.state.dayOfTheWeek)
     
     return(
       this.state.weatherData.length > 0 &&
@@ -59,7 +62,7 @@ class App extends Component{
              let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
              return(
                <>
-              <h2 className="col l6 day">{this.generateDayOfTheWeek(day.dt_txt)}</h2>
+              <h2 className="col l6 day">{this.state.dayOfTheWeek}</h2>
               {/* <h2>{Math.ceil(day.main.temp)}<sup>&#xb0;</sup></h2> */}
               <div className="weekly-forcast col s12">
                 <div className="days">
