@@ -35,7 +35,7 @@ class App extends Component{
       console.log(response)
       let filteredList = response.data.list.filter((data)=>data.dt_txt.includes('18:00:00'))
       console.log(filteredList)
-      this.setState({weatherData:filteredList,backgroundType:filteredList[0].weather[0].main})
+      this.setState({weatherData:filteredList,backgroundType:filteredList[4].weather[0].main})
     })
   }
   generateDayOfTheWeek =(date)=>{
