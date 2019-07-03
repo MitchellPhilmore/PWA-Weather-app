@@ -1,119 +1,103 @@
-@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap");
 
-h4{
-  color:black;
+h4 {
+  color: black;
 }
 
-.forcast{
-width:300px;
-height: 300px;
+.forcast {
+  width: 300px;
+  height: 300px;
 }
-.card{
+.card {
   height: 100vh;
-  width:300px;
-  font-family: 'Pathway Gothic One', sans-serif;
+  width: 300px;
+  font-family: "Pathway Gothic One", sans-serif;
 }
 
-hr{
-  width:100%;
+hr {
+  width: 100%;
 }
 
-.sun{
-  height:50px;
-  width:50px;
+.sun {
+  height: 50px;
+  width: 50px;
 }
 
-.days{
+.days {
   border-bottom: 3px solid white;
   overflow: hidden;
 }
 
-.degree{
-  text-align:right;
+.degree {
+  text-align: right;
 }
 /* Iphone 6,7,8 plus */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    html, body {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
-    body {
-      position: relative;
-    }
-    
-  .card{
-    height:100vh;
-    width:100vw;
-    
-    
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  .card {
+    height: 100vh;
+    width: 100vw;
   }
   /* .day{
     position: relative;
     left:60px;
   } */
 
-  h2{
-    font-size:25px;
+  h2 {
+    font-size: 25px;
   }
-  
 
-  .container{
-    padding:0;
-    margin:0;
+  .container {
+    padding: 0;
+    margin: 0;
     text-transform: uppercase;
-    
   }
-  .description{
-    font-size:20px;
+  .description {
+    font-size: 20px;
   }
-  
-
 }
 /* iphone 6,7,8 */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    html, body {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
-    body {
-      position: relative;
-    }
-    
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+  }
 
-    .card{
-      height:100vh;
-      width:100vw;
-      
-      
-    }
-   
-    .container{
-      padding:0;
-      margin:0;
-      text-transform: uppercase;
-      
-    }
+  .card {
+    height: 100vh;
+    width: 100vw;
+  }
 
-    /* .day{
+  .container {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  /* .day{
       position: relative;
       left:60px;
     } */
-    .card{
-      /* background-size: cover; */
-      height:100vh;
-    }
+  .card {
+    /* background-size: cover; */
+    height: 100vh;
+  }
 
-    .description{
-      font-size:20px;
-    }
-
-
+  .description {
+    font-size: 20px;
+  }
 }
 
 /* .card{ 
@@ -125,73 +109,61 @@ hr{
   height: 100%;
 } */
 
-#weatherIcon{
-  position:relative;
-  left:30px
+#weatherIcon {
+  position: relative;
+  left: 30px;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    html, body {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
-    body {
-      position: relative;
-    }
-    
-    /* .day{
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  /* .day{
       position: relative;
       left:60px;
     } */
-    .card{
-      height: 100vh;
-    }
-
-
+  .card {
+    height: 100vh;
+  }
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .card{
-      width:100vw;
-      color:purple;
-      height:100%;
-     
-    }
-    .container{
-      position: absolute;;
-      right:30%;
-}
-#weatherIcon{
-  position: relative;
-  left:60%;
-  top:20px;
-}
-.degree{
-  font-size:50px;
-}
-.day{
-  font-size:60px;
-}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .card {
+    width: 100vw;
+    color: purple;
+    height: 100%;
+  }
+  .container {
+    position: absolute;
+    right: 30%;
+  }
+  #weatherIcon {
+    position: relative;
+    left: 60%;
+    top: 20px;
+  }
+  .degree {
+    font-size: 50px;
+  }
+  .day {
+    font-size: 60px;
+  }
 }
 
 /* -----------Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    .card{
-      width:100vw;
-      height:100vh;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .card {
+    width: 100vw;
+    height: 100vh;
+  }
 }
