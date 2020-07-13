@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap");
 body{
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
+
 }
 .card-content{
   color:white;
@@ -10,12 +11,12 @@ h4 {
   color: black;
 }
 
+
 .forcast {
   width: 300px;
   height: 300px;
 }
 .card {
-  width: 100vw;
   background: url(/static/media/tb.1ac4240d.gif) center center no-repeat;
   height:100%;
   background-size: cover;
@@ -99,20 +100,19 @@ hr {
   }
 
 
-  /* .day{
+  .day{
       position: relative;
-      left:60px;
-    } */
-  .card {
+      left:90px;
+    }
+  .card .card-content {
     /* background-size: cover; */
-    height: 100vh;
+    padding: 0px !important;
   }
 
   .description {
     font-size: 13px;
     text-align: center;
-    position: relative;
-    left: 13px;
+  
   }
 }
 
