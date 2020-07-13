@@ -42,16 +42,11 @@ const App = (props) => {
      weatherData.length > 0 && (
       <>
         <div className="container">
-          <div style={{
-              background:`url(${backgrounds[backgroundType]}) no-repeat center `,
-              backgroundSize: "100vh",
-              height: "100%",
-            
-            }} 
+          <div
             
             class="card row"
           >
-            <div style={{ color: "white" }} className="card-content">
+            <div className="card-content">
               {weatherData.map((day) => {
                 let imgIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
                 return (
