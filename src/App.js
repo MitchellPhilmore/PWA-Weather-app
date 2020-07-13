@@ -56,11 +56,11 @@ const App = (props) => {
                       <div className="days">
                         {/* <h4 className="col s6 l12 m12 day">{this.generateDayOfTheWeek(day.dt_txt) }</h4> */}
                         <div>
-                          <h4 className="col s6 l12 m12 day white-text">
+                          <h5 className="col s5 l12 m12 day white-text">
                             {generateDayOfTheWeek(day.dt_txt)}
-                          </h4>
+                          </h5>
                           <img
-                            className="col s3"
+                            className="col s2"
                             id="weatherIcon"
                             src={imgIcon}
                           />
